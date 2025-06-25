@@ -1,0 +1,700 @@
+  body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color:#010208;
+  
+ 
+}
+
+
+
+/* Hero Section Heading */
+
+.hero-heading {
+  font-family: 'Syne', sans-serif;
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 88px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+}
+
+/* Inline images in heading */
+.hero-heading img {
+  width: 100px;
+  height: 60px;
+  vertical-align: middle;
+  margin: 0 8px;
+  object-fit: contain;
+}
+
+/* Medium Devices */
+@media screen and (max-width: 992px) {
+  .hero-heading {
+    font-size: 25px;
+    line-height: 54px;
+  }
+
+  .hero-heading img {
+    width: 70px;
+    height: 40px;
+  }
+}
+
+/* Small Devices */
+@media screen and (max-width: 576px) {
+  .hero-heading {
+    font-size:  20px;
+    line-height: 40px;
+  }
+
+  .hero-heading img {
+    width: 50px;
+    height: 30px;
+  }
+}
+
+
+
+.nav-link.nav-pill {
+  
+  padding: 9px 20px ;
+  border-radius: 999px;
+  transition: all 0.3s ease;
+
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+letter-spacing: 0%;
+
+}
+
+.nav-link.nav-pill:hover {
+  background-color: white;
+  color: black !important;
+}
+
+
+
+/* Active link style */
+.nav-link.nav-pill.active {
+  background-color: white;
+  color: black !important;
+  padding: 8px 20px; /* slightly larger */
+  font-weight: 500;
+}
+
+
+
+
+/* Logo marquee */
+.logo-marquee {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+}
+
+.marquee-track {
+  display: inline-flex;
+  animation: scroll-left 20s linear infinite;
+}
+
+.logo-img {
+  height: 30px;
+  filter: grayscale(100%);
+  opacity: 0.6;
+  transition: all 0.3s ease;
+}
+
+.logo-img:hover {
+  filter: none;
+  opacity: 1;
+}
+
+/* Text next to logos */
+.hero-description {
+  font-size: 1rem;
+  color: #bbb;
+  line-height: 1.6;
+}
+
+/* Marquee keyframe animation */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Responsive stacking on mobile */
+@media (max-width: 768px) {
+  .logo-marquee {
+    margin-bottom: 1.5rem;
+  }
+}
+
+/* Expertise Section Styling */
+.expertise-section {
+  margin-top: -5rem;
+  padding-bottom: 5rem;
+}
+
+/* Section title with star icon */
+.expertise-heading {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.expertise-heading h2 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* Expertise Section */
+.expertise-section {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+/* Section heading with star icon */
+.expertise-section .section-title {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.expertise-section .section-title h2 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: white;
+  margin: 0;
+}
+
+/* Individual expertise items */
+.expertise-item h5 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.expertise-item p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #aaa;
+}
+
+/* Hover animation (optional) */
+.expertise-item {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.expertise-item:hover {
+  transform: translateY(-3px);
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .expertise-section .section-title h2 {
+    font-size: 1.5rem;
+  }
+
+  .expertise-item h5 {
+    font-size: 1rem;
+  }
+}
+
+/* Works Section Title */
+section h2 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+/* Card container */
+.card {
+  background: #CBCBCB7A ;
+  border: none;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 40px rgba(255, 255, 255, 0.05);
+}
+
+/* Image Styling */
+.card img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+/* Card Body */
+.card-body {
+  padding: 2rem;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.card-text {
+  font-size: 0.95rem;
+  color: #aaa;
+  margin-bottom: 1.25rem;
+}
+
+/* Button Styling */
+.btn-outline-light {
+  padding: 6px 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border: 2px solid white;
+  border-radius: 999px;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-light:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .card-body {
+    padding: 1.25rem;
+  }
+
+  .card-title {
+    font-size: 1.1rem;
+  }
+
+  .card-text {
+    font-size: 0.9rem;
+  }
+}
+
+
+
+/* Experience Section */
+section h2 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+/* Table container */
+.table-responsive {
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+/* Table styling */
+.table {
+  background-color: transparent;
+  color: white;
+  font-size: 1rem;
+}
+
+.table td {
+  padding: 1rem;
+  font-weight: 500;
+  vertical-align: middle;
+  background-color:#010208;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.table td:first-child {
+  text-align: left;
+  color: #f5f5f5;
+}
+
+.table td:last-child {
+  text-align: right;
+  color: #999;
+}
+
+/* Optional: Hover effect */
+.table tr:hover td {
+  background-color: rgba(255, 255, 255, 0.05);
+  transition: background-color 0.3s ease;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .table td {
+    font-size: 0.9rem;
+    padding: 0.75rem;
+  }
+}
+
+
+
+/* Testimonial Section */
+section h2 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+/* Testimonial Card Container */
+.testimonial-box {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 1.25rem;
+  padding: 2rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(8px);
+  transition: all 0.3s ease;
+}
+
+/* Avatar + Name */
+.testimonial-box img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+.testimonial-box strong {
+  font-weight: 600;
+  color: white;
+}
+
+.testimonial-box .text-muted {
+  font-size: 0.9rem;
+  color: #aaa !important;
+}
+
+
+.testimonial-box p {
+  font-size: 2rem;
+  color: #ddd;
+  line-height: 1.6;
+}
+
+
+.testimonial-box svg {
+  margin-right: 0.5rem;
+  color: #999;
+  vertical-align: middle;
+}
+
+/* Arrow buttons */
+.testimonial-box .btn {
+  width: 38px;
+  height: 38px;
+  padding: 0;
+  border-radius: 50%;
+  background-color: rgb(158, 65, 65);
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease;
+}
+
+.testimonial-box .btn:hover {
+  background-color: #f8f9fa;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .testimonial-box {
+    flex-direction: column !important;
+    gap: 1.5rem;
+    text-align: center;
+  }
+
+  .testimonial-box .btn {
+    width: 36px;
+    height: 36px;
+  }
+
+  .testimonial-box p {
+    font-size: 0.95rem;
+  }
+}
+
+
+/* Marquee container */
+.marquee-container {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  background-color: transparent;
+}
+
+/* Scrolling track */
+.marquee-track {
+  display: inline-flex;
+
+  align-items: end;
+  gap: 3rem;
+  animation: scroll-left 10s linear infinite;
+  padding: 0.2rem 0;
+}
+
+/* Logos inside marquee */
+.marquee-track img {
+  height: 40px;
+  object-fit: contain;
+  opacity: 0.8;
+  transition: opacity 0.1s ease;
+}
+
+.marquee-track img:hover {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+/* Scroll animation */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Responsive: shrink logos on small screens */
+@media (max-width: 768px) {
+  .marquee-track img {
+    height: 30px;
+  }
+}
+
+/* FAQ Section Title */
+section h2 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  color: white;
+}
+
+/* Accordion Container */
+.accordion-item {
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+
+/* Accordion Header Button */
+.accordion-button {
+  background-color: #1c1c1c;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 1rem 1.25rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border: none;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #ffffff1a;
+  color: #fff;
+  box-shadow: none;
+}
+
+.accordion-button::after {
+  filter: invert(1); /* white arrow icon */
+}
+
+/* Accordion Body */
+.accordion-body {
+  background-color: transparent;
+  color: #ccc;
+  font-size: 0.95rem;
+  padding: 1rem 1.25rem;
+  line-height: 1.6;
+}
+
+/* Hover Effects */
+.accordion-button:hover {
+  background-color: #2a2a2a;
+  color: #fff;
+}
+
+
+/* Blog.css */
+
+.blog-section {
+ 
+  color: white;
+  font-family: 'Inter', 'Helvetica Neue', sans-serif;
+}
+
+.blog-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.blog-card {
+  background-color: #000;
+  border-radius: 24px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  transition: background 0.3s ease;
+}
+
+.blog-card:hover {
+  background-color: #111;
+}
+
+.blog-image {
+  border-radius: 20px;
+  width: 100%;
+  max-width: 200px;
+  height: 140px;
+  object-fit: cover;
+}
+
+.blog-meta {
+  flex-grow: 1;
+}
+
+.blog-date {
+  color: #999;
+  font-size: 0.875rem;
+}
+
+.blog-heading {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0.5rem 0;
+}
+
+.blog-tags {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+}
+
+.blog-tag {
+  border: 1px solid #fff;
+  border-radius: 999px;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.75rem;
+  background: transparent;
+  color: white;
+}
+
+.read-button {
+  border-radius: 999px;
+  padding: 0.5rem 1.5rem;
+  font-weight: 500;
+  background-color: white;
+  color: black;
+  border: none;
+  font-size: 0.9rem;
+  transition: transform 0.2s ease;
+  white-space: nowrap;
+}
+
+.read-button:hover {
+  transform: scale(1.05);
+}
+
+@media (min-width: 768px) {
+  .blog-card {
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .blog-image {
+    width: 180px;
+    height: 130px;
+  }
+
+  .blog-heading {
+    font-size: 1.5rem;
+  }
+}
+
+
+/* Footer base styles */
+
+
+footer {
+
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 2rem;
+}
+
+/* "Let’s Talk!" heading */
+footer h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+/* Email link */
+footer a {
+  font-size: 1.1rem;
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: 0.3s ease;
+}
+
+footer a:hover {
+  border-bottom: 1px solid #fff;
+}
+
+/* Footer bottom text */
+footer .row {
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+/* Footer social links */
+footer samp {
+  margin: 0 0.5rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+  font-weight: 500;
+  color: #ccc;
+}
+
+footer samp:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  footer h1 {
+    font-size: 2rem;
+  }
+
+  footer .row {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  footer samp {
+    display: inline-block;
+    margin-top: 0.5rem;
+  }
+} 
